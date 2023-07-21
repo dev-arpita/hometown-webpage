@@ -15,7 +15,6 @@ body {
     margin: 0;
     text-align: center;
     line-height: 1.5;
-    height: 100vh;
     font-size: 16px;
 }
 main {
@@ -97,6 +96,7 @@ p {
 
 .top-places {
     display: grid;
+    width: 100%;
     grid-template-rows: 1fr;
     gap: 20px;
     padding: 20px 20px 40px;
@@ -144,7 +144,7 @@ p {
     color: #042960;
     font-weight: 900;
 }
-@media (min-width:800px) {
+@media only screen and (min-width: 800px) {
     .top-places {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -165,7 +165,7 @@ p {
     }
     
 }
-@media (max-width:500px) {
+/* @media only screen and (max-width: 600px) {
         .guide-name {
             margin-top: 0;
         }
@@ -173,4 +173,4 @@ p {
             width: 40%;
             border-radius: 50%;
         }
-}
+} */
